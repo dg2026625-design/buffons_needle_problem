@@ -10,7 +10,7 @@ so,pi = 2*(needle_length) / Percentage * line_distant
 
 '''
 counter_met = 0
-counter_total =  0
+counter_total =  10
 #total number
 needle_length = 3
 Line_distant = 4
