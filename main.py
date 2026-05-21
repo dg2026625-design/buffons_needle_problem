@@ -10,7 +10,7 @@ so,pi = 2*(needle_length) / Percentage * line_distant
 
 '''
 counter_met = 0
-counter_total =  10
+counter_total =  0
 #total number
 needle_length = 3
 Line_distant = 4
@@ -41,44 +41,18 @@ while True:
         B.rotate(angle = radian,axis = vec(0,0,1))
         #needle is thrown to frameworks in every time        
         
-        if 0 <= box_y <= Line_distant/2:
-            distant = box_y
-        
-        elif Line_distant/2 <= box_y <= Line_distant*(3/2):
-            distant = abs(Line_distant-box_y)
-        
-        elif Line_distant*(3/2) <= box_y <= Line_distant*(5/2):
-            distant = abs(Line_distant*2-box_y)
-        
-        elif Line_distant*(5/2) <= box_y <= Line_distant*(7/2):
-            distant = abs(Line_distant*3-box_y)
-        
-        elif Line_distant*(7/2) <= box_y <= Line_distant*(9/2):
-            distant = abs(Line_distant*4-box_y)
-            
-        elif Line_distant*(9/2) <= box_y <= Line_distant*(11/2):
-            distant = abs(Line_distant*5-box_y)
-            
-        elif Line_distant*(11/2) <= box_y <= Line_distant*(13/2):
-            distant = abs(Line_distant*6-box_y)
-            
-        elif Line_distant*(13/2) <= box_y <= Line_distant*(15/2):
-            distant = abs(Line_distant*7-box_y)
-            
-        elif Line_distant*(15/2) <= box_y <= Line_distant*(17/2):
-            distant = abs(Line_distant*8-box_y)
-            
-        elif Line_distant*(17/2) <= box_y <= Line_distant*(19/2):
-            distant = abs(Line_distant*9-box_y)
-        #NoGaDa, calculating distant between line and needle
-        
+        for q in range(10):
+            if Line_distant*(-1 + 2*q /2) <= box_y <= Line_distant*(1 + 2*q/2):
+                distant = abs(Line_distant*q - box_y)
+                
         if distant <= sin(radian)*(needle_length/2):
             B.color = vec(1,0,0)
             counter_met += 1
-                #the time when the needle met 
+                #the time when the needle met
+                
         imformation.append(needle_length)
         imformation.append(Line_distant)
         imformation.append(counter_met/counter_total)#percentage
 
         print(f'pi predicted_val:{(2*needle_length/Line_distant)/(imformation[2])} , total_num = {counter_total}')
-        #this val is going to pi   
+        #this val is going to pi         
