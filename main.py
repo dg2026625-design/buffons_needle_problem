@@ -42,7 +42,7 @@ while True:
         #needle is thrown to frameworks in every time        
         
         for q in range(10):
-            if Line_distant*(-1 + 2*q /2) <= box_y <= Line_distant*(1 + 2*q/2):
+            if Line_distant*((-1 + 2*q)/2) <= box_y <= Line_distant*((1 + 2*q)/2):
                 distant = abs(Line_distant*q - box_y)
                 
         if distant <= sin(radian)*(needle_length/2):
