@@ -1,25 +1,25 @@
 ### 3일차
 ## if의 여러개 써진 코드를 3줄코드로 고치다.
-# if 0 <= box_y <= Line_distant/2:
-    # distant = box_y
-# elif Line_distant/2 <= box_y <= Line_distant*(3/2):
-    # distant = abs(Line_distant-box_y)    
-# elif Line_distant*(3/2) <= box_y <= Line_distant*(5/2):
-    distant = abs(Line_distant*2-box_y)
-elif Line_distant*(5/2) <= box_y <= Line_distant*(7/2):
-    distant = abs(Line_distant*3-box_y)
-elif Line_distant*(7/2) <= box_y <= Line_distant*(9/2):
-    distant = abs(Line_distant*4-box_y)
-elif Line_distant*(9/2) <= box_y <= Line_distant*(11/2):
-    distant = abs(Line_distant*5-box_y)
-elif Line_distant*(11/2) <= box_y <= Line_distant*(13/2):
-    distant = abs(Line_distant*6-box_y)
-elif Line_distant*(13/2) <= box_y <= Line_distant*(15/2):
-    distant = abs(Line_distant*7-box_y)
-elif Line_distant*(15/2) <= box_y <= Line_distant*(17/2):
-    distant = abs(Line_distant*8-box_y)
-elif Line_distant*(17/2) <= box_y <= Line_distant*(19/2):
-    distant = abs(Line_distant*9-box_y)
+    if 0 <= box_y <= Line_distant/2:
+        distant = box_y
+    elif Line_distant/2 <= box_y <= Line_distant*(3/2):
+        distant = abs(Line_distant-box_y)    
+    elif Line_distant*(3/2) <= box_y <= Line_distant*(5/2):
+        distant = abs(Line_distant*2-box_y)
+    elif Line_distant*(5/2) <= box_y <= Line_distant*(7/2):
+        distant = abs(Line_distant*3-box_y)
+    elif Line_distant*(7/2) <= box_y <= Line_distant*(9/2):
+        distant = abs(Line_distant*4-box_y)
+    elif Line_distant*(9/2) <= box_y <= Line_distant*(11/2):
+        distant = abs(Line_distant*5-box_y)
+    elif Line_distant*(11/2) <= box_y <= Line_distant*(13/2):
+        distant = abs(Line_distant*6-box_y)
+    elif Line_distant*(13/2) <= box_y <= Line_distant*(15/2):
+        distant = abs(Line_distant*7-box_y)
+    elif Line_distant*(15/2) <= box_y <= Line_distant*(17/2):
+        distant = abs(Line_distant*8-box_y)
+    elif Line_distant*(17/2) <= box_y <= Line_distant*(19/2):
+        distant = abs(Line_distant*9-box_y)
 distant의 값(바늘과 선의 거리)를 구해주는 코드를 
 이러한 if의 여러개가 붙어있는 부분을 for 문으로 고쳐
 
