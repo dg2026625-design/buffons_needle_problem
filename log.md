@@ -1,6 +1,6 @@
 ### 3일차
 ## if의 여러개 써진 코드를 3줄코드로 고치다.
-#if 0 <= box_y <= Line_distant/2:
+# if 0 <= box_y <= Line_distant/2:
     distant = box_y
 elif Line_distant/2 <= box_y <= Line_distant*(3/2):
     distant = abs(Line_distant-box_y)    
