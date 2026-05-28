@@ -36,6 +36,7 @@ distant의 값(바늘과 선의 거리)를 구해주는 코드를
 ## 사칙연산 실수를 줄이다.
     if Line_distant*(-1 + 2*q /2) <= box_y <= Line_distant*(1 + 2*q/2)
 부분에 우선 사칙연산 실수를 줄이기 위해 괄호를 써서
+    
     if Line_distant*((-1 + 2*q)/2) <= box_y <= Line_distant*((1 + 2*q)/2):
 로 고쳤다.
 ### 5일차
