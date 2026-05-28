@@ -23,9 +23,9 @@
 distant의 값(바늘과 선의 거리)를 구해주는 코드를 
 이러한 if의 여러개가 붙어있는 부분을 for 문으로 고쳐
 
-for q in range(10):
-    if Line_distant*(-1 + 2*q /2) <= box_y <= Line_distant*(1 + 2*q/2):
-              distant = abs(Line_distant*q - box_y)
+    for q in range(10):
+        if Line_distant*(-1 + 2*q /2) <= box_y <= Line_distant*(1 + 2*q/2):
+                  distant = abs(Line_distant*q - box_y)
             로 3줄로 줄였다.
             
 ## counter_total의 값을 0 으로 변화시켜 숫자의 잘못세지는 오류를 해결하다.
